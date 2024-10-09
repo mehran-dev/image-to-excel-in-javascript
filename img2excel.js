@@ -65,4 +65,5 @@ async function processImage(imagePath) {
 
 // Example usage
 const imagePath = "./image.png"; // Replace with your image path
+
 processImage(imagePath);
