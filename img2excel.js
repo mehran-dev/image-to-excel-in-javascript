@@ -1,6 +1,6 @@
-const sharp = require("sharp");
-const ExcelJS = require("exceljs");
-const path = require("path");
+import sharp from "sharp";
+import ExcelJS from "exceljs";
+import path from "path";
 
 async function processImage(imagePath) {
   try {

@@ -1,4 +1,4 @@
-const sharp = require("sharp");
+import sharp from "sharp";
 
 const resizeImage = async (imagePath, maxWidth, maxHeight) => {
   try {

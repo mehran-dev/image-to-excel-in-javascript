@@ -1,7 +1,7 @@
-const sharp = require("sharp");
-const ExcelJS = require("exceljs");
-const path = require("path");
-const fs = require("fs");
+import sharp from "sharp";
+import ExcelJS from "exceljs";
+import path from "path";
+import fs from "fs";
 
 // Function to save the image to disk
 async function saveImageToDisk(imageBuffer, outputPath) {

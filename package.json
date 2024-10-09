@@ -2,6 +2,7 @@
   "name": "excel",
   "version": "1.0.0",
   "main": "excell.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon excel.js"
@@ -13,5 +14,7 @@
     "exceljs": "^4.4.0",
     "jimp": "^1.6.0",
     "sharp": "^0.33.5"
-  }
+  },
+  "devDependencies": {},
+  "keywords": []
 }

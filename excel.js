@@ -1,4 +1,4 @@
-const ExcelJS = require("exceljs");
+import ExcelJS from "exceljs";
 
 // Create a new workbook and a worksheet
 const workbook = new ExcelJS.Workbook();
