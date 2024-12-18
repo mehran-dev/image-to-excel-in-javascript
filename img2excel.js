@@ -1,7 +1,10 @@
 import sharp from "sharp";
 import ExcelJS from "exceljs";
 import path from "path";
+import { fileURLToPath } from "url";
 
+const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
+const __dirname = path.dirname(__filename); // get the name of the directory
 async function processImage(imagePath) {
   try {
     // Load the image using sharp and get metadata
@@ -65,5 +68,6 @@ async function processImage(imagePath) {
 
 // Example usage
 const imagePath = "./image.png"; // Replace with your image path
+console.log(__dirname);
 
 processImage(imagePath);

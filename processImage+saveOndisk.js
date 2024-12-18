@@ -2,7 +2,10 @@ import sharp from "sharp";
 import ExcelJS from "exceljs";
 import path from "path";
 import fs from "fs";
+import { fileURLToPath } from "url";
 
+const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
+const __dirname = path.dirname(__filename); // get the name of the directory
 // Function to save the image to disk
 async function saveImageToDisk(imageBuffer, outputPath) {
   return new Promise((resolve, reject) => {
